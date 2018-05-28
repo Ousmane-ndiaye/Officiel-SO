@@ -114,27 +114,27 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         }
 
         elseif (0 === strpos($pathinfo, '/sen-office')) {
-            // adob_senoffice_front_index
+            // accueil
             if ('/sen-office/accueil' === $pathinfo) {
                 if (!in_array($canonicalMethod, array('GET', 'POST'))) {
                     $allow = array_merge($allow, array('GET', 'POST'));
-                    goto not_adob_senoffice_front_index;
+                    goto not_accueil;
                 }
 
-                return array (  '_controller' => 'ADOB\\SenofficeBundle\\Controller\\FrontController::indexAction',  '_route' => 'adob_senoffice_front_index',);
+                return array (  '_controller' => 'ADOB\\SenofficeBundle\\Controller\\FrontController::indexAction',  '_route' => 'accueil',);
             }
-            not_adob_senoffice_front_index:
+            not_accueil:
 
-            // adob_senoffice_front_catalogue
+            // catalogue
             if ('/sen-office/catalogue' === $pathinfo) {
                 if (!in_array($canonicalMethod, array('GET', 'POST'))) {
                     $allow = array_merge($allow, array('GET', 'POST'));
-                    goto not_adob_senoffice_front_catalogue;
+                    goto not_catalogue;
                 }
 
-                return array (  '_controller' => 'ADOB\\SenofficeBundle\\Controller\\FrontController::catalogueAction',  '_route' => 'adob_senoffice_front_catalogue',);
+                return array (  '_controller' => 'ADOB\\SenofficeBundle\\Controller\\FrontController::catalogueAction',  '_route' => 'catalogue',);
             }
-            not_adob_senoffice_front_catalogue:
+            not_catalogue:
 
             // adob_senoffice_front_selectcommune
             if ('/sen-office/select/commune' === $pathinfo) {
@@ -147,16 +147,16 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             }
             not_adob_senoffice_front_selectcommune:
 
-            // adob_senoffice_front_ajoutsalle
+            // partager/salle
             if ('/sen-office/partager/salle' === $pathinfo) {
                 if (!in_array($canonicalMethod, array('GET', 'POST'))) {
                     $allow = array_merge($allow, array('GET', 'POST'));
-                    goto not_adob_senoffice_front_ajoutsalle;
+                    goto not_partagersalle;
                 }
 
-                return array (  '_controller' => 'ADOB\\SenofficeBundle\\Controller\\FrontController::ajoutSalleAction',  '_route' => 'adob_senoffice_front_ajoutsalle',);
+                return array (  '_controller' => 'ADOB\\SenofficeBundle\\Controller\\FrontController::ajoutSalleAction',  '_route' => 'partager/salle',);
             }
-            not_adob_senoffice_front_ajoutsalle:
+            not_partagersalle:
 
         }
 

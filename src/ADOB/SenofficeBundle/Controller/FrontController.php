@@ -15,7 +15,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 class FrontController extends Controller
 {
     /**
-     * @Route("/accueil")
+     * @Route("/accueil", name="accueil")
      * @Method({"GET", "POST"})
      */
     public function indexAction()
@@ -32,7 +32,7 @@ class FrontController extends Controller
     }
 
     /**
-     * @Route("/catalogue")
+     * @Route("/catalogue", name="catalogue")
      * @Method({"GET", "POST"})
      */
     public function catalogueAction()
@@ -57,7 +57,7 @@ class FrontController extends Controller
     }
 
     /**
-     * @Route("/partager/salle")
+     * @Route("/partager/salle", name="partager/salle")
      * @Method({"GET", "POST"})
      */
     public function ajoutSalleAction()
