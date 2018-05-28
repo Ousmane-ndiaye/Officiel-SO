@@ -1,0 +1,4 @@
+senoffice_pages:
+    resource: "@SenofficeBundle/Controller/"
+    type:     annotation
+    prefix:   /

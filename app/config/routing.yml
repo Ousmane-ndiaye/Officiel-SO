@@ -1,0 +1,3 @@
+senoffice:
+    resource: "@SenofficeBundle/Resources/config/routing.yml"
+    prefix:   /sen-office

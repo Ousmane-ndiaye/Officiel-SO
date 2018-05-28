@@ -1,0 +1,4 @@
+services:
+#    senoffice.example:
+#        class: ADOB\SenofficeBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
