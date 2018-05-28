@@ -28,6 +28,9 @@ div#OR {
     z-index: 1;
     background: #DFDFDF;
 }
+.a-tab:hover{
+    height: 25px;
+}
 </style>
 {% endblock %}
 
@@ -60,112 +63,116 @@ div#OR {
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                     ×</button>
                 <h4 class="modal-title" id="myModalLabel">
-                    Login/Registration - <a href="http://www.jquery2dotnet.com">jquery2dotnet.com</a></h4>
+                    Connexion/Inscription</h4>
             </div>
             <div class="modal-body">
                 <div class="row">
                     <div class="col-md-8" style="border-right: 1px dotted #C2C2C2;padding-right: 30px;">
                         <!-- Nav tabs -->
                         <ul class="nav nav-tabs">
-                            <li class="active"><a href="#Login" data-toggle="tab">Login</a></li>
-                            <li><a href="#Registration" data-toggle="tab">Registration</a></li>
+                            <li class="active"><a class="a-tab" href="#Login" data-toggle="tab">Connexion</a></li>
+                            <li><a class="a-tab" href="#Registration" data-toggle="tab">Inscription</a></l>
                         </ul>
                         <!-- Tab panes -->
                         <div class="tab-content">
                             <div class="tab-pane active" id="Login">
-                                <form role="form" class="form-horizontal">
-                                <div class="form-group">
-                                    <label for="email" class="col-sm-2 control-label">
-                                        Email</label>
-                                    <div class="col-sm-10">
-                                        <input type="email" class="form-control" id="email1" placeholder="Email" />
+                            <!-- formulaire de connexion -->
+                                <form method="post" action="" role="form" class="form-horizontal">
+                                    <div class="form-group">
+                                        <label for="email" class="col-sm-4 control-label">
+                                            Email</label>
+                                        <div class="col-sm-8">
+                                            <input type="email" name="email" class="form-control" id="email1" placeholder="Email" required/>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputPassword1" class="col-sm-2 control-label">
-                                        Password</label>
-                                    <div class="col-sm-10">
-                                        <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Email" />
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1" class="col-sm-4 control-label">
+                                            Mot de passe</label>
+                                        <div class="col-sm-8">
+                                            <input type="password" name="password" class="form-control" id="exampleInputPassword1" />
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-2">
+                                    <div class="row">
+                                        <div class="col-sm-2">
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <button type="submit" class="btn btn-main">
+                                                Se connecter</button>
+                                            <a href="javascript:;">Mot de passe oublié ?</a>
+                                        </div>
                                     </div>
-                                    <div class="col-sm-10">
-                                        <button type="submit" class="btn btn-primary btn-sm">
-                                            Submit</button>
-                                        <a href="javascript:;">Forgot your password?</a>
-                                    </div>
-                                </div>
                                 </form>
                             </div>
                             <div class="tab-pane" id="Registration">
-                                <form role="form" class="form-horizontal">
-                                <div class="form-group">
-                                    <label for="email" class="col-sm-2 control-label">
-                                        Name</label>
-                                    <div class="col-sm-10">
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <select class="form-control">
-                                                    <option>Mr.</option>
-                                                    <option>Ms.</option>
-                                                    <option>Mrs.</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-9">
-                                                <input type="text" class="form-control" placeholder="Name" />
+                            <!-- formulaire de d'inscription -->
+                                <form method="post" action="" role="form" class="form-horizontal">
+                                    <div class="form-group">
+                                        <label for="nomComplet" class="col-sm-4 control-label">
+                                            Prénom et nom</label>
+                                        <div class="col-sm-8">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <select name="sexe" class="form-control" required />
+                                                        <option value="m">Mr.</option>
+                                                        <option value="f">Mme.</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <input type="text" name="nomComplet" class="form-control" placeholder="Prénom et nom" required />
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="email" class="col-sm-2 control-label">
-                                        Email</label>
-                                    <div class="col-sm-10">
-                                        <input type="email" class="form-control" id="email" placeholder="Email" />
+                                    <div class="form-group">
+                                        <label for="email" class="col-sm-4 control-label">
+                                            Email</label>
+                                        <div class="col-sm-8">
+                                            <input type="email" name="email" class="form-control" id="email" placeholder="Email" required/>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="mobile" class="col-sm-2 control-label">
-                                        Mobile</label>
-                                    <div class="col-sm-10">
-                                        <input type="email" class="form-control" id="mobile" placeholder="Mobile" />
+                                    <div class="form-group">
+                                        <label for="mobile" class="col-sm-4 control-label">
+                                            Téléphone</label>
+                                        <div class="col-sm-8">
+                                            <input type="number" name="tel" class="form-control" id="mobile" placeholder="Mobile" />
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="password" class="col-sm-2 control-label">
-                                        Password</label>
-                                    <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="password" placeholder="Password" />
+                                    <div class="form-group">
+                                        <label for="password" class="col-sm-4 control-label">
+                                            Mot de passe</label>
+                                        <div class="col-sm-8">
+                                            <input type="password" class="form-control" id="password" placeholder="Password" />
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-2">
+                                    <div class="row">
+                                        <div class="col-sm-2">
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <button type="submit" class="btn btn-main">
+                                                S'inscrire & Continuer
+                                            </button>
+                                            <button type="button" class="btn btn-default">
+                                                Annuler
+                                            </button>
+                                        </div>
                                     </div>
-                                    <div class="col-sm-10">
-                                        <button type="button" class="btn btn-primary btn-sm">
-                                            Save & Continue</button>
-                                        <button type="button" class="btn btn-default btn-sm">
-                                            Cancel</button>
-                                    </div>
-                                </div>
                                 </form>
                             </div>
                         </div>
                         <div id="OR" class="hidden-xs">
-                            OR</div>
+                            OU
+                        </div>
                     </div>
                     <div class="col-md-4">
                         <div class="row text-center sign-with">
                             <div class="col-md-12">
                                 <h3>
-                                    Sign in with</h3>
+                                    S'inscrire avec</h3>
                             </div>
                             <div class="col-md-12">
                                 <div class="btn-group btn-group-justified">
-                                    <a href="#" class="btn btn-primary">Facebook</a> <a href="#" class="btn btn-danger">
-                                        Google</a>
+                                    <a href="#" class="btn" style="background: #0d47a1; color: white; border-radius: 5px 0px 0px 5px;">Facebook</a>
+                                    <a href="#" class="btn" style="background: red; color: white; border-radius: 0px 5px 5px 0px;">Google</a>
                                 </div>
                             </div>
                         </div>
@@ -176,9 +183,9 @@ div#OR {
     </div>
 </div>
 
-<div class="mg-testi-partners parallax" style="margin-top: 0.5%; margin-bottom: 5%;">
+<div class="container" style="margin-top: 1%; margin-bottom: 5%;">
     <div class="row" style="margin-right: 0; padding: 5px;">
-        <div class="col-12 col-sm-6">
+        <div class="mg-testi-partners parallax col-12 col-sm-6" style="padding: 20px; background: white; color: #16262e;">
             <div>
                 <p>
                     Proposez la location de votre salle de réunion ou salle de séminaire et obtenez un revenu complémentaire. La création d'une annonce pour louer une salle sur Bird Office est gratuite et sans engagement !
@@ -195,7 +202,7 @@ div#OR {
                 </p>
             </div>
         </div>
-        <div class="col-12 col-sm-6">
+        <div class="mg-testi-partners parallax col-12 col-sm-6" style="padding: 20px;">
             <div>
                 <p>
                     Proposez la location de votre salle de réunion ou salle de séminaire et obtenez un revenu complémentaire. La création d'une annonce pour louer une salle sur Bird Office est gratuite et sans engagement !
@@ -209,11 +216,10 @@ div#OR {
             <div>
                 <p>
                     Proposez la location de votre salle de réunion ou salle de séminaire et obtenez un revenu complémentaire. La création d'une annonce pour louer une salle sur Bird Office est gratuite et sans engagement !
-                    <br>
-                    <button class="btn btn-main" data-toggle="modal" data-target="#myModal" style="">
-                        Louer ma salle
-                    </button>
                 </p>
+                <button class="btn btn-main" data-toggle="modal" data-target="#myModal">
+                    <span style="font-weight: bold; text-transform: upperCase;">Je loue ma salle</span>
+                </button>
             </div>
         </div>
     </div>
@@ -225,4 +231,7 @@ div#OR {
 {% endblock %}
 
 {% block partenaires %}
+{% endblock %}
+
+{% block galerie %}
 {% endblock %}
