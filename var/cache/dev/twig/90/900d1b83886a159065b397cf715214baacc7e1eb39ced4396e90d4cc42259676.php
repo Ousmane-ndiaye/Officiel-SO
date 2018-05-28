@@ -1,6 +1,6 @@
 <?php
 
-/* TwigBundle:Exception:trace.html.twig */
+/* @Twig/Exception/trace.html.twig */
 class __TwigTemplate_81a9eb16c8879262143cb278f66173811d2b18081dc4bc19bd591d2a3f1a449f extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -15,11 +15,11 @@ class __TwigTemplate_81a9eb16c8879262143cb278f66173811d2b18081dc4bc19bd591d2a3f1
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_1d34efbe866f67ee7428c996e28dbadd3ba2af1bfaa758f4ef5cdc4eb3dd86eb = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_1d34efbe866f67ee7428c996e28dbadd3ba2af1bfaa758f4ef5cdc4eb3dd86eb->enter($__internal_1d34efbe866f67ee7428c996e28dbadd3ba2af1bfaa758f4ef5cdc4eb3dd86eb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "TwigBundle:Exception:trace.html.twig"));
+        $__internal_ca988b3be595b55f346e7fb6b1d4a9c8296dac1d9623f16f5dae491602c02613 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_ca988b3be595b55f346e7fb6b1d4a9c8296dac1d9623f16f5dae491602c02613->enter($__internal_ca988b3be595b55f346e7fb6b1d4a9c8296dac1d9623f16f5dae491602c02613_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Twig/Exception/trace.html.twig"));
 
-        $__internal_5c999c8208da3eec11430145b3d491a98b68c9d0f2b212281ceb10edaefa2602 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_5c999c8208da3eec11430145b3d491a98b68c9d0f2b212281ceb10edaefa2602->enter($__internal_5c999c8208da3eec11430145b3d491a98b68c9d0f2b212281ceb10edaefa2602_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "TwigBundle:Exception:trace.html.twig"));
+        $__internal_1f147bc15e90487fd8f2c129ed1e36c6e410ba5ff7857699d61ef8f80024e14c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_1f147bc15e90487fd8f2c129ed1e36c6e410ba5ff7857699d61ef8f80024e14c->enter($__internal_1f147bc15e90487fd8f2c129ed1e36c6e410ba5ff7857699d61ef8f80024e14c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Twig/Exception/trace.html.twig"));
 
         // line 1
         if ((($this->getAttribute(($context["trace"] ?? null), "file", array(), "any", true, true)) ? (_twig_default_filter($this->getAttribute(($context["trace"] ?? null), "file", array()), false)) : (false))) {
@@ -109,16 +109,16 @@ class __TwigTemplate_81a9eb16c8879262143cb278f66173811d2b18081dc4bc19bd591d2a3f1
 ";
         }
         
-        $__internal_1d34efbe866f67ee7428c996e28dbadd3ba2af1bfaa758f4ef5cdc4eb3dd86eb->leave($__internal_1d34efbe866f67ee7428c996e28dbadd3ba2af1bfaa758f4ef5cdc4eb3dd86eb_prof);
+        $__internal_ca988b3be595b55f346e7fb6b1d4a9c8296dac1d9623f16f5dae491602c02613->leave($__internal_ca988b3be595b55f346e7fb6b1d4a9c8296dac1d9623f16f5dae491602c02613_prof);
 
         
-        $__internal_5c999c8208da3eec11430145b3d491a98b68c9d0f2b212281ceb10edaefa2602->leave($__internal_5c999c8208da3eec11430145b3d491a98b68c9d0f2b212281ceb10edaefa2602_prof);
+        $__internal_1f147bc15e90487fd8f2c129ed1e36c6e410ba5ff7857699d61ef8f80024e14c->leave($__internal_1f147bc15e90487fd8f2c129ed1e36c6e410ba5ff7857699d61ef8f80024e14c_prof);
 
     }
 
     public function getTemplateName()
     {
-        return "TwigBundle:Exception:trace.html.twig";
+        return "@Twig/Exception/trace.html.twig";
     }
 
     public function isTraitable()
@@ -173,6 +173,6 @@ class __TwigTemplate_81a9eb16c8879262143cb278f66173811d2b18081dc4bc19bd591d2a3f1
         })|raw }}
     </div>
 {% endif %}
-", "TwigBundle:Exception:trace.html.twig", "/var/www/html/senoffice/myoffice/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/views/Exception/trace.html.twig");
+", "@Twig/Exception/trace.html.twig", "/var/www/html/dossier-html/Projets/Personnel/senoffice/myoffice/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/views/Exception/trace.html.twig");
     }
 }
